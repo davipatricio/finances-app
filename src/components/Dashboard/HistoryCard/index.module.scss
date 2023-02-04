@@ -1,0 +1,55 @@
+.title {
+  font-size: 1.6rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.divider {
+  background-color: #808080;
+
+  margin-top: 10px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  width: 100%;
+  height: 2px;
+}
+
+.monthInfo {
+  display: flex;
+  gap: 18px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  p,
+  span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .earn span {
+    color: #14ff00;
+    margin-left: 5px;
+  }
+
+  .spent span {
+    color: #ff0000;
+    margin-left: 8px;
+  }
+
+  .total span {
+    color: #aee710;
+    margin-left: 5px;
+  }
+}

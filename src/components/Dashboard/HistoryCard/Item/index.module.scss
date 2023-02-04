@@ -1,0 +1,55 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mainInfo {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    @media (max-width: 768px) {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    white-space: normal;
+    word-break: break-all;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .itemDate p {
+    color: #949494;
+    font-weight: bold;
+    min-width: 46px;
+  }
+
+  .itemValue p {
+    font-weight: bold;
+
+    @media (max-width: 768px) {
+      margin-top: 5px;
+    }
+
+    &.earn {
+      color: #14ff00;
+    }
+
+    &.lose {
+      color: #ff0000;
+    }
+  }
+}
